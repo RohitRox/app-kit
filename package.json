@@ -1,7 +1,8 @@
 {
   "name": "app-kit",
-  "version": "0.0.1",
-  "main": "build/index.ts",
+  "version": "0.0.1-pre1",
+  "main": "lib/index.ts",
+  "types": "lib/index.d.ts",
   "license": "UNLICENSED",
   "scripts": {
     "build": "tsc",
