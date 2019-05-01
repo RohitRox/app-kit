@@ -1,20 +1,21 @@
 {
   "name": "app-kit",
-  "version": "0.0.1-pre2",
+  "version": "0.0.1-pre7",
   "main": "build/index.ts",
-  "types": "lib/index.d.ts",
+  "types": "build/index.d.ts",
   "license": "UNLICENSED",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest",
-    "prepublish": "yarn test && yarn run build"
+    "prepare": "yarn test && yarn run build"
   },
   "publishConfig": {
     "registry": "https://cloudfactory.jfrog.io/cloudfactory/api/npm/npm/"
   },
   "dependencies": {
+    "@types/winston": "^2.4.4",
     "winston": "^3.2.1"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "typescript": "^3.4.3"
   },
   "peerDependencies": {
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "@types/winston": "^2.4.4"
   }
 }

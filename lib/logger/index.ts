@@ -30,7 +30,6 @@ const enumerateErrorFormat = format((info: any) => {
   }
 
   return info;
-  ``;
 });
 
 const devFormat = () =>

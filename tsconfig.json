@@ -2,14 +2,15 @@
   "compilerOptions": {
     "module": "commonjs",
     "esModuleInterop": true,
-    "target": "es6",
+    "target": "es5",
     "pretty": true,
     "strict": true,
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "build",
-    "allowJs": true
+    "declaration": true,
+    "lib": ["es2017", "es7", "es6", "dom"]
   },
   "include": ["lib/**/*"],
-  "exclude": ["node_modules", "**/tests/*"]
+  "exclude": ["node_modules", "**/tests/*", "build"]
 }
