@@ -1,0 +1,33 @@
+{
+  "name": "app-kit",
+  "version": "0.0.1",
+  "main": "build/index.ts",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest",
+    "prepublish": "yarn test && yarn run build"
+  },
+  "publishConfig": {
+    "registry": "https://cloudfactory.jfrog.io/cloudfactory/api/npm/npm/"
+  },
+  "dependencies": {
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@types/jest": "^24.0.12",
+    "@types/node": "^11.13.8",
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.3"
+  },
+  "peerDependencies": {
+    "winston": "^3.2.1"
+  }
+}
