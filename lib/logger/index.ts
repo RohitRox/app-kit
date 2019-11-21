@@ -58,6 +58,7 @@ const prodFormat = () =>
 
 const logFormat = isProd ? prodFormat() : devFormat();
 
+// logger instance
 export default createLogger({
   level: logLevel,
   format: logFormat,
